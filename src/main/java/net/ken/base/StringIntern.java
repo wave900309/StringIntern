@@ -18,6 +18,7 @@ public class StringIntern {
         // ["a", "b"]
         String b = "b";
         // {String("ab")}, ["a", "b"]
+        // 底层是生成两个StringBuilder对象拼接然后toString();
         String ab = a + b;
         // {String("ab")}, ["a", "b", "ab"]
         // ab在heap中，"ab"在string table, 引用不同，所以false
